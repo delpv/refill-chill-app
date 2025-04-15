@@ -1,0 +1,54 @@
+<script src="../js/checkout-complete-server.js" defer></script>
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body text-center py-5">
+                    <div class="mb-4">
+                        <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+                    </div>
+                    <h1 class="mb-3">Thank You for Your Order!</h1>
+                    <p class="lead mb-4">Your order has been successfully placed.</p>
+                    
+                    <div class="mb-4">
+                        <p class="mb-1">Order Number: <span id="order-id" class="fw-bold">ORD-XXXX</span></p>
+                        <p>A confirmation email has been sent to <span id="order-email" class="fw-bold">your email address</span>.</p>
+                    </div>
+                    
+                    <div class="card bg-light mb-4">
+                        <div class="card-body">
+                            <h3 class="mb-3">Order Summary</h3>
+                            <div id="order-items" class="mb-3">
+                                <!-- Order items will be dynamically inserted here by JavaScript -->
+                            </div>
+                            
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal:</span>
+                                <span id="subtotal" class="fw-bold">0.00 DKK</span>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Shipping:</span>
+                                <span id="shipping">5.00 DKK</span>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between pt-2 border-top mt-2">
+                                <span class="fw-bold">Total:</span>
+                                <span id="total" class="fw-bold">0.00 DKK</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="mb-3">Shipping Information</h3>
+                        <p id="shipping-address" class="mb-1">Your shipping address will appear here</p>
+                        <p id="shipping-method" class="mb-0">Shipping method: Standard (3-5 business days)</p>
+                    </div>
+                    
+                    <a href="/" class="btn btn-primary">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

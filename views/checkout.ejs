@@ -1,0 +1,138 @@
+
+<script src="../js/checkout-server.js" defer></script>
+
+<div class="container py-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="mb-3">Checkout</h1>
+            <a href="/basket" class="btn btn-outline-primary">
+                <i class="fas fa-arrow-left"></i> Back to Basket
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Order Summary -->
+        <div class="col-md-5 mb-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h2 class="card-title mb-3">Order Summary</h2>
+                    <div id="order-summary">
+                        <!-- Order items will be dynamically inserted here by JavaScript -->
+                    </div>
+
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Subtotal:</span>
+                            <span id="subtotal" class="fw-bold">0.00 DKK</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Shipping:</span>
+                            <span id="shipping">5.00 DKK</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between pt-2 border-top mt-2">
+                            <span class="fw-bold">Total:</span>
+                            <span id="total" class="fw-bold">0.00 DKK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title mb-3">Shipping Method</h2>
+
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" id="standard" name="shipping-method"
+                            value="standard" checked>
+                        <label class="form-check-label" for="standard">
+                            Standard Shipping (5.00 DKK) - 3-5 business days
+                        </label>
+                    </div>
+
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" id="express" name="shipping-method"
+                            value="express">
+                        <label class="form-check-label" for="express">
+                            Express Shipping (10.00 DKK) - 1-2 business days
+                        </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" id="premium" name="shipping-method"
+                            value="premium">
+                        <label class="form-check-label" for="premium">
+                            Premium Shipping (20.00 DKK) - Same day delivery
+                        </label>
+                    </div>
+
+                    <p class="text-muted small">Free standard shipping on orders over 499 DKK</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Details -->
+        <div class="col-md-7">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Payment Details</h2>
+
+                    <form id="checkout-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" id="address" class="form-control" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8 mb-3">
+                                <label for="city" class="form-label">City</label>
+                                <input type="text" id="city" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="zip" class="form-label">Zip Code</label>
+                                <input type="text" id="zip" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <h3 class="mt-4 mb-3">Payment Method</h3>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" id="credit-card" name="payment-method"
+                                value="credit-card" checked>
+                            <label class="form-check-label" for="credit-card">
+                                <i class="fab fa-cc-visa me-2"></i>
+                                <i class="fab fa-cc-mastercard me-2"></i>
+                                Credit Card
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="radio" id="paypal" name="payment-method"
+                                value="paypal">
+                            <label class="form-check-label" for="paypal">
+                                <i class="fab fa-paypal me-2"></i>
+                                PayPal
+                            </label>
+                        </div>
+
+                        <button type="button" id="complete-order" class="btn btn-primary w-100">Complete
+                            Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

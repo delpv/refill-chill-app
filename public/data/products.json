@@ -1,0 +1,211 @@
+[
+    {
+      "id": 1,
+      "name": "Hydro Flask",
+      "price": 240,
+      "category": {
+        "material": "steel",
+        "consumer": "adults",
+        "sizes": ["532ml", "710ml", "946ml", "1183ml"],
+        "colors": ["blue", "black", "white", "red", "green", "pink"]
+      },
+      "description": "A durable stainless steel bottle with double-wall insulation, keeping drinks cold for 24 hours or hot for 12 hours. Leak-proof and easy to carry, perfect for outdoor adventures, gym, and daily use.",
+      "image": "/data/images/Hydro Flask.png"
+    },
+    {
+      "id": 2,
+      "name": "Smart Bottle",
+      "price": 310,
+      "category": {
+        "material": "steel",
+        "consumer": "adults",
+        "sizes": ["500ml", "750ml"],
+        "colors": ["black", "silver", "white", "navy blue"]
+      },
+      "description": "A Bluetooth-connected bottle that tracks hydration and reminds you to drink. Made from premium stainless steel, keeping drinks at the perfect temperature. Ideal for fitness, office, and tech-savvy users.",
+      "image": "/data/images/Smart Bottle.png"
+    },
+    {
+      "id": 3,
+      "name": "Steel Sip",
+      "price": 175,
+      "category": {
+        "material": "steel",
+        "consumer": "adults",
+        "sizes": ["1L", "1.5L"],
+        "colors": ["red", "blue", "black", "silver"]
+      },
+      "description": "A stainless steel, insulated bottle with a rugged design for everyday use, travel, and work. The easy-pour spout and sturdy handle make it perfect for students, families, and outdoor enthusiasts.",
+      "image": "/data/images/Steel Sip.png"
+    },
+    {
+      "id": 4,
+      "name": "Eco Bottle",
+      "price": 140,
+      "category": {
+        "material": "glass",
+        "consumer": "adults",
+        "sizes": ["500ml", "750ml"],
+        "colors": ["black", "clear", "amber", "green"]
+      },
+      "description": "A minimalist, eco-friendly water bottle made from glass or biodegradable materials, featuring a cork lid. Ideal for home, office, or casual outings while reducing plastic waste.",
+      "image": "/data/images/Eco Bottle.png"
+    },
+    {
+      "id": 5,
+      "name": "Sport Flow",
+      "price": 210,
+      "category": {
+        "material": "plastic",
+        "consumer": "adults",
+        "sizes": ["600ml", "750ml"],
+        "colors": ["green", "blue", "pink", "black", "white"]
+      },
+      "description": "A lightweight, ergonomic sports bottle designed for athletes, gym-goers, and outdoor activities. Features a leak-proof flip lid for easy access and secure hydration during workouts.",
+      "image": "/data/images/Sport Flow.png"
+    },
+    {
+      "id": 6,
+      "name": "Pure Drink",
+      "price": 195,
+      "category": {
+        "material": "plastic",
+        "consumer": "adults",
+        "sizes": ["500ml", "750ml"],
+        "colors": ["white", "clear", "blue", "red", "black"]
+      },
+      "description": "A BPA-free squeeze bottle designed for cyclists, runners, and sports enthusiasts. Lightweight and easy to grip, allowing for quick hydration during workouts or training.",
+      "image": "/data/images/Pure Drink.png"
+    },
+    {
+      "id": 7,
+      "name": "Aqua Boost",
+      "price": 225,
+      "category": {
+        "material": "glass",
+        "consumer": "adults",
+        "sizes": ["500ml", "750ml"],
+        "colors": ["clear", "black", "blue", "pink"]
+      },
+      "description": "A fruit-infuser water bottle, perfect for those who enjoy flavored hydration. Features a removable infuser core, a leak-proof design, and durable borosilicate glass or BPA-free plastic.",
+      "image": "/data/images/Aqua Boost.png"
+    },
+    {
+      "id": 8,
+      "name": "Arctic Chill",
+      "price": 265,
+      "category": {
+        "material": "steel",
+        "consumer": "adults",
+        "sizes": ["532ml", "710ml", "946ml"],
+        "colors": ["black", "blue", "silver", "white"]
+      },
+      "description": "A high-performance insulated bottle that keeps drinks cold for 24 hours or hot for 12 hours. The non-slip grip and leak-proof lid make it ideal for travel, work, and workouts.",
+      "image": "/data/images/Arctic Chill.png"
+    },
+    {
+      "id": 9,
+      "name": "Terra Flask",
+      "price": 195,
+      "category": {
+        "material": "glass",
+        "consumer": "adults",
+        "sizes": ["500ml", "750ml"],
+        "colors": ["clear", "amber", "green", "beige"]
+      },
+      "description": "A sustainable, stylish bottle featuring a natural bamboo lid and eco-friendly glass or biodegradable material. Ideal for office use, casual outings, and mindful hydration.",
+      "image": "/data/images/Terra Flask.png"
+    },
+    {
+      "id": 10,
+      "name": "Titan Jug",
+      "price": 280,
+      "category": {
+        "material": "plastic",
+        "consumer": "adults",
+        "sizes": ["1000ml", "1500ml", "2000ml"],
+        "colors": ["black", "gray", "transparent", "blue"]
+      },
+      "description": "A large-capacity sports jug built for long workouts, hikes, and outdoor activities. Features a sturdy handle, shatter-resistant body, and leak-proof cap.",
+      "image": "/data/images/Titan Jug.png"
+    },
+    {
+      "id": 11,
+      "name": "Urban Squeeze",
+      "price": 155,
+      "category": {
+        "material": "plastic",
+        "consumer": "adults",
+        "sizes": ["500ml", "750ml"],
+        "colors": ["green", "blue", "white", "red"]
+      },
+      "description": "A soft, squeezable sports bottle designed for quick hydration. Made from BPA-free plastic, featuring a spill-proof valve and ergonomic grip, ideal for cycling, running, and gym workouts.",
+      "image": "/data/images/Urban Squeeze.png"
+    },
+    {
+      "id": 12,
+      "name": "Zen Flow",
+      "price": 185,
+      "category": {
+        "material": "glass",
+        "consumer": "adults",
+        "sizes": ["500ml", "750ml"],
+        "colors": ["white", "frosted glass", "light gray", "beige"]
+      },
+      "description": "A sleek, minimalist water bottle designed for yoga lovers and mindfulness practitioners. Made from glass or BPA-free plastic, featuring a soft silicone grip and spill-proof dispenser cap.",
+      "image": "/data/images/Zen Flow.png"
+    },
+    {
+      "id": 13,
+      "name": "Tiny Sip",
+      "price": 125,
+      "category": {
+        "material": "silicone",
+        "consumer": "children",
+        "sizes": ["150ml", "250ml"],
+        "colors": ["blue", "pink", "white", "transparent"]
+      },
+      "description": "A BPA-free, food-grade silicone baby bottle with an anti-colic vent system to reduce gas discomfort. The soft spout supports an easy transition from breastfeeding.",
+      "image": "/data/images/Tiny Sip.png"
+    },
+    {
+      "id": 14,
+      "name": "Kiddie Flow",
+      "price": 140,
+      "category": {
+        "material": "plastic",
+        "consumer": "children",
+        "sizes": ["350ml", "500ml"],
+        "colors": ["green", "yellow", "blue", "purple"]
+      },
+      "description": "A fun, leak-proof kids' bottle with a flip-top straw lid for easy drinking. Lightweight and spill-resistant, ideal for school, playmates, and active kids.",
+      "image": "/data/images/Kiddie Flow.png"
+    },
+    {
+    "id": 15,
+    "name": "Dino Gulp",
+    "price": 175,
+    "category": {
+        "material": "steel",
+        "consumer": "children",
+        "sizes": ["400ml", "600ml"],
+        "colors": ["red", "blue", "green", "yellow"]
+    },
+    "description": "A stainless steel, insulated kids' bottle featuring dinosaur prints. Keeps drinks cold for up to 12 hours with a flip cap straw for easy sipping.",
+    "image": "/data/images/Dino Gulp.png"
+},
+{
+    "id": 16,
+    "name": "Magic Squeeze (3-Pack)",
+    "price": 195,
+    "category": {
+        "material": "silicone",
+        "consumer": "children",
+        "sizes": ["250ml"],
+        "colors": ["light blue", "pink", "orange", "teal"]
+    },
+    "description": "A set of three soft silicone sippy cups with built-in straws and spill-proof valves. Designed for toddlers learning to drink independently.",
+    "image": "/data/images/Magic Squeeze.png"
+}
+  ]
+  

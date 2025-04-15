@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="../js/auth.js" defer></script>
+    <script src="../js/basket-server.js" defer></script>
+    <script src="../js/list.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Alert -->
+    <div class="alert alert-warning text-center m-0 py-1">
+        🚀 For Free shipping on orders over 499DKK! 🚀
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="navbar-brand" href="/">Refill&Chill</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/list">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-nowrap" href="/ourstory">Our Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/support">Support</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item d-flex align-items-center">
+                    <p class="mb-0 me-2"><span id="username"></span></p>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a id="login-link" class="navbar-brand" href="login.html" id="login-btn">
+                        <img src="../data/pics/person.svg" alt="Login" width="20" height="20">
+                    </a>
+                    <a id="logout-link" class="navbar-brand" href="#" id="logout-btn">
+                        <img src="../data/pics/box-arrow-left.svg" alt="Logout" width="20" height="20">
+                    </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="navbar-brand" href="/basket">
+                        <img src="../data/pics/cart.svg" alt="my basket" width="20" height="20">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <%- body %>
+
+        <!-- Footer Section -->
+        <div class="container-fluid text-center p-4" style="background-color: #538392;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <p class="text-white">Let's stay in touch! Sign up to our newsletter.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Insert your email address here">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <p class="mt-3">
+                        <a href="#" class="text-white">FAQ</a> |
+                        <a href="#" class="text-white">Privacy Policy</a> |
+                        <a href="#" class="text-white">Contact Us</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Login/Register -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login/Register</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Login/Registration Form -->
+                        <div id="login-form">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter username"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password"
+                                    required>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="login-btn">Login</button>
+                        </div>
+                        <div id="register-form" style="display:none;">
+                            <div class="mb-3">
+                                <label for="reg-username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="reg-username" placeholder="Enter username"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="reg-password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="reg-password"
+                                    placeholder="Enter password" required>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="register-btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
